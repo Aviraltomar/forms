@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>internship Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="https://formsubmit.co/aviraltomar999@gmail.com" method="POST">
+            <h1>Internship Form</h1>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="number" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+
+            <div class="container2">
+
+                <h3>Select Country State and City</h3>
+        
+                <div class="select_option">
+                    <select class="form-select country" aria-label="Default select example" onchange="loadStates()">
+                        <option selected>Select Country</option>
+                    </select>
+                    <select class="form-select state" aria-label="Default select example" onchange="loadCities()">
+                        <option selected>Select State</option>
+                    </select>
+                    <select class="form-select city" aria-label="Default select example">
+                        <option selected>Select City</option>
+                    </select>
+                </div>
+        
+            </div>
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode" required>
+<!-- course -->
+            <fieldset>
+                <legend>Course:</legend>
+                <label>
+                    <input type="radio" name="course" value="btech" required> B.Tech
+                </label>
+                <label>
+                    <input type="radio" name="course" value="other" required> Other Courses
+                    <button type="button" id="infoButton">i</button>
+                </label>
+            </fieldset>
+<!-- date -->
+            <div class="container1">
+                <label for="input-date">Start Date of Course (e.g., 2020)</label>
+                <input type="date" id="input-date" oninput="validateDate()">
+                <span id="error-icon" class="error-icon" style="display: none;"></span>
+                
+                <div id="message" class="message"></div>
+            </div>
+
+            <label for="year">Enter a Year:</label>
+            <input type="number" id="year" name="year" min="1900" max="2100" required>
+               
+            <label for="resume">Upload Resume:</label> 
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            <label>
+                <input type="checkbox" id="terms" name="terms" required> I hereby agree to the <a href="https://www.google.com">terms and conditions</a>
+            </label>
+<!-- submit -->
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="course-fees">
+            <details>
+                <summary>Course Fees: 40 K</summary>
+                   <li> 1. Quality Instruction
+                    Expert Instructors: Experienced and knowledgeable.
+                    Personalized Attention: Small class sizes for individualized feedback.</li>
+                    <li>2. Comprehensive Curriculum
+                    In-depth Content: Thorough coverage of essential topics.
+                    Practical Application: Includes hands-on projects and real-world examples.</li>
+                    <li>3. Resources and Materials
+                    Premium Resources: High-quality textbooks, software, and online materials.
+                    Updated Content: Regularly refreshed to reflect industry trends.</li>
+                    <li>4. Learning Environment
+                    Modern Facilities: State-of-the-art classrooms and labs.
+                    Support Services: Tutoring, career counseling, and tech support.</li>
+                    <li>5. Career Advancement
+                    Job Placement Assistance: Help with internships and job placements.
+                    Certifications: Recognized credentials to boost career prospects.</li>
+                    <li>6. Flexibility and Convenience
+                    Flexible Scheduling: Part-time, evening, and online options.
+                    Lifetime Access: Continued access to materials and recorded lectures.</li>
+                    <li>7. Community and Networking
+                    Alumni Network: Ongoing support and professional opportunities.
+                    Collaborative Learning: Peer collaboration enhances teamwork skills.</li>
+                    <li>8. Return on Investment
+                    Higher Earning Potential: Significant increase in career opportunities and earnings.
+                    Skill Enhancement: In-demand skills make the investment worthwhile.</li>
+              </details>
+        </div>
+
+        <section>
+            <h2>What will you learn</h2>
+            <div class="features">
+             What will you learn
+            <button type="button" class="infoButton" data-info="Details about what you will learn">i</button>
+            </div>
+            <div id="message1" class="message1"></div>
+        </section>
+
+        <section>
+            <h2>What will you get</h2>
+            <div class="benefits">
+                What will you get
+                <button type="button" class="infoButton" data-info="1. Practical Experience
+                Real-World Skills: Apply theoretical knowledge to practical tasks.
+                Industry Exposure: Gain insights into industry practices and standards.
+                2. Professional Development
+                Skill Enhancement: Develop specific skills relevant to your career.
+                Soft Skills: Improve communication, teamwork, and problem-solving abilities.
+                3. Networking Opportunities
+                Professional Contacts: Connect with industry professionals and peers.
+                Mentorship: Receive guidance and feedback from experienced mentors.
+                4. Career Advancement
+                Resume Building: Enhance your resume with practical experience.
+                Job Opportunities: Increase chances of full-time employment post-internship.
+                5. Academic Credit
+                Course Credits: Earn academic credits, if applicable.
+                Learning Integration: Link academic learning with professional practice.
+                6. Personal Growth
+                Confidence Building: Gain confidence in a professional setting.
+                Time Management: Learn to manage tasks and deadlines effectively.
+                7. Financial Compensation
+                Stipends: Some internships offer financial compensation or stipends.
+                Expense Coverage: Potential coverage of travel or accommodation expenses.
+                ">i</button>
+            </div>
+            <div id="message2" class="message2"></div>
+        </section>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

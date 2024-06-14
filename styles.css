@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #e50072; /* Pink text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #000000; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(70, 69, 69, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #333; /* Dark input background */
+    color: #366fca; /* Pink text color */
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 4px;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green button */
+    color: #f9f5f5; /* White text */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button#infoButton {
+    margin-left: 10px;
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button.infoButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styling for details and summary */
+details {
+    margin-top: 20px;
+    border: 1px solid #555; /* Dark gray border */
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #333; /* Dark background */
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #ff69b4; /* Pink text color */
+}
+
+details summary:focus {
+    outline: none;
+}
+
+/* Styling for error icon and message */
+.error-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('error-icon.png'); /* Replace with your error icon image */
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Styling for 'What will you get' and 'What will you learn' sections */
+section {
+    margin-top: 20px;
+}
+
+.features,
+.benefits {
+    display: flex;
+    align-items: center;
+}
+
+button.infoButton {
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+button.infoButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.message1,
+.message2 {
+    margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    button[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="date"],
+    select,
+    textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
